@@ -25,6 +25,21 @@ function validate()
 
 //for patient info page
 
+function checkedMedHistory()
+{
+    var medHistory = document.getElementsByTagName('input');
+
+    for (var i = 0; i < medHistory.length; i++)
+    {
+        if (medHistory[i].type == 'checkbox')
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 function submitInfo()
 {
     var fname = document.getElementById('fname').value.trim();
@@ -60,6 +75,11 @@ function submitInfo()
     else if (address == "")
     {
         alert("Address should be provided.");
+        return false;
+    }
+    else if (!checkedMedHistory())
+    {
+        alert("Medical History should be provided.");
         return false;
     }
     else
