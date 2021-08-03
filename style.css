@@ -1,0 +1,36 @@
+body
+{
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.centertext
+{
+    text-align: center;
+}
+
+.formdiv
+{
+    max-width: 500px;
+    padding-top: 150px;
+}
+
+.bgcolordiv
+{
+    background-color: lightblue;
+}
+
+.textboxwid
+{
+    width: 100%;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.selectsize
+{
+    width: 200px;
+    height: 185px;
+}
