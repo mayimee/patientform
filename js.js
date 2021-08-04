@@ -40,6 +40,18 @@ function checkedMedHistory()
     return false;
 }
 
+function enableText()
+{
+    var medicyes = document.getElementById("yesmed");
+    var medtext = document.getElementById("medicationtext");
+    medtext.disabled = medicyes.checked ? false : true;
+    medtext.value="";
+    if(!medtext.disabled)
+    {
+        medtext.focus();
+    }
+}
+
 function submitInfo()
 {
     var fname = document.getElementById('fname').value.trim();

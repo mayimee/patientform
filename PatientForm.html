@@ -115,10 +115,15 @@
                     Are you taking any medication?
                 </div>
                 <div class="col-md-12 text-center">
-                    <input type="radio" name="medication">&nbsp Yes
+                    <input type="radio" name="medication" id="yesmed" onclick="enableText()">&nbsp Yes
                     &nbsp;
                     &nbsp;
-                    <input type="radio" name="medication">&nbsp No
+                    <input type="radio" name="medication" id="nomed" onclick="enableText()">&nbsp No
+                    <br>
+                    If yes, please list your medications here.
+                    <br>
+                    <br>
+                    <input type="text" id="medicationtext" class="medtextsize" disabled>
                 </div>
             </div>
         </div>
