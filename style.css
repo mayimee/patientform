@@ -1,3 +1,8 @@
+*
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 body
 {
     padding-left: 180px;
@@ -37,5 +42,4 @@ ul
 .medtextsize
 {
     width: 400px;
-    height: 150px;
 }

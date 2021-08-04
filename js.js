@@ -61,6 +61,8 @@ function submitInfo()
     var address = document.getElementById('address').value;
     var bday = document.getElementById('bday').value;
     var gender = document.querySelector('input[name="gender"]:checked');
+    var checkedHist = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    var symptom = document.querySelectorAll('input[id="symptom"].select').length;
 
     
 
@@ -89,9 +91,14 @@ function submitInfo()
         alert("Address should be provided.");
         return false;
     }
-    else if (!checkedMedHistory())
+    else if (checkedHist <= 0)
     {
         alert("Medical History should be provided.");
+        return false;
+    }
+    else if (symptom <= 0)
+    {
+        alert("You must provide your current symptoms.");
         return false;
     }
     else
