@@ -7,13 +7,20 @@ body
 {
     padding-left: 180px;
     padding-right: 180px;
-    background-image: url(bg01.png) center center fixed;
+    background-image: url('backgroundmed01.png');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+.bgcolordiv
+{
+    background-color: lightgray;
 }
 
 .centertext
