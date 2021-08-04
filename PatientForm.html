@@ -59,7 +59,7 @@
                     <input type="date" id="bday">
                 </div>
                 <div class="col-md-4">
-                    <input type="tel" id="contact" class="textboxwid">
+                    <input type="number" id="contact" class="textboxwid">
                 </div>
             </div>
             <!--End of Gender, Contact No., Birthday-->
@@ -115,10 +115,10 @@
                     Are you taking any medication?
                 </div>
                 <div class="col-md-12 text-center">
-                    <input type="radio" name="medication" id="yesmed" onclick="enableText()">&nbsp Yes
+                    <input type="radio" name="medication" id="yesmed" onclick="enableText()" value="Yes">Yes
                     &nbsp;
                     &nbsp;
-                    <input type="radio" name="medication" id="nomed" onclick="enableText()">&nbsp No
+                    <input type="radio" name="medication" id="nomed" onclick="enableText()" value="No">No
                     <br>
                     If yes, please list your medications here.
                     <br>

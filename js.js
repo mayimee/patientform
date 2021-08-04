@@ -58,11 +58,13 @@ function submitInfo()
     var mname = document.getElementById('mname').value.trim();
     var lname = document.getElementById('lname').value.trim();
     var contact = document.getElementById('contact').value.trim();
+    var number = /^\d{10}$/;
     var address = document.getElementById('address').value;
     var bday = document.getElementById('bday').value;
     var gender = document.querySelector('input[name="gender"]:checked');
     var checkedHist = document.querySelectorAll('input[type="checkbox"]:checked').length;
-    var symptom = document.querySelectorAll('input[id="symptom"].select').length;
+    var symptom = document.getElementById("symptom").value;
+    var medicans = document.querySelector('input[name="medication"]:checked').value;
 
     
 
@@ -86,6 +88,11 @@ function submitInfo()
         alert("Contact Number should be provided.");
         return false;
     }
+    else if ((contact.value.match(number)))
+    {
+        alert("Please provide the correct phone number.");
+        return false;
+    }
     else if (address == "")
     {
         alert("Address should be provided.");
@@ -98,12 +105,17 @@ function submitInfo()
     }
     else if (symptom <= 0)
     {
-        alert("You must provide your current symptoms.");
+        alert("You must provide your current symptom/s.");
+        return false;
+    }
+    else if (medicans == "")
+    {
+        alert("Please answer the medications question.");
         return false;
     }
     else
     {
-        alert(`Patient Information submitted for Patient ${fname} ${mname} ${lname}`);
+        alert(`Success! Patient Information submitted for Patient ${fname} ${mname} ${lname}`);
         location.reload();
     }
 }
