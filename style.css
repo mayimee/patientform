@@ -7,18 +7,13 @@ body
 {
     padding-left: 180px;
     padding-right: 180px;
-    background-color: aquamarine;
+    background-image: url(bg01.png) center center fixed;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
-}
-
-.bgcolordiv
-{
-    background-color: lightgrey;
 }
 
 .centertext
