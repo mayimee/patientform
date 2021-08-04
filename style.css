@@ -7,12 +7,20 @@ body
 {
     padding-left: 180px;
     padding-right: 180px;
+    background-color: aquamarine;
 }
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
 }
+
+.bgcolordiv
+{
+    background-color: lightgrey;
+}
+
 .centertext
 {
     text-align: center;
